@@ -1,0 +1,60 @@
+# =============================================================================
+# TAREA1.2: Problemas de Ana y Marcos
+# AUTOR: David Lanz
+# FECHA DE CREACIÓN: Junio 2026
+# DESCRIPCIÓN: Programa para calcular raices de polinomios de segundo grado 
+# utilizando la fórmula general. 
+# =============================================================================
+
+# 1. Inicialización de los coeficientes y variables
+a = float(input("Ingrese el coeficiente a: "))
+b = float(input("Ingrese el coeficiente b: "))
+c = float(input("Ingrese el coeficiente c: "))
+continuar = 's'
+
+# 1.El programa se ejecutará repetidamente MIENTRAS el usuario responda 's'
+while continuar.lower() == 's':
+    
+    # Validación: Evitar la división por cero si 'a' es 0
+    if a == 0:
+        print("Error: El coeficiente 'a' no puede ser 0 en un polinomio de segundo grado.")
+    else:
+        # 2. Calculamos el discriminante (D)
+        discriminante = (b ** 2) - (4 * a * c)
+        
+        print(f"\nPolinomio: {a}x² + ({b})x + ({c})")
+        print(f"El discriminante (D) es: {discriminante}")
+        
+        # 3. Evaluamos la naturaleza de las raíces
+        if discriminante > 0:
+            # Usamos ** 0.5 para calcular la raíz cuadrada del discriminante
+            raiz_D = discriminante ** 0.5
+            
+            x1 = (-b + raiz_D) / (2 * a)
+            x2 = (-b - raiz_D) / (2 * a)
+            print("El polinomio de segundo grado tiene dos soluciones reales y distintas:")
+            print(f"x1 = {x1}")
+            print(f"x2 = {x2}")
+            
+        elif discriminante == 0:
+            x = -b / (2 * a)
+            print("El polinomio de segundo grado tiene una única solución real (raíz doble):")
+            print(f"x = {x}")
+            
+        else:
+            # Mensaje solicitado cuando no es posible resolver en números reales
+            print("Mensaje: No es posible resolver la raíz cuadrada del polinomio de segundo grado con números reales.")
+            print("Razón: El discriminante es menor a cero (las raíces son complejas).")
+    
+    # 4. Pregunta de control al usuario para decidir si continuar o cerrar
+    print("\n" + "-"*40)
+    continuar = input("¿Desea resolver otro polinomio? (Presione 's' para continuar, o cualquier otra tecla para salir): ")
+    if continuar.lower() == 's':
+        a = float(input("Ingrese el coeficiente a: "))
+        b = float(input("Ingrese el coeficiente b: "))
+        c = float(input("Ingrese el coeficiente c: "))
+
+# 5. Mensaje final cuando el usuario decide salir del ciclo
+print("\n¡Gracias por usar el programa! Código finalizado con éxito.")
+        
+#6. Fin del programa

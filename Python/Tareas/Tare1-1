@@ -1,0 +1,26 @@
+# =============================================================================
+# TAREA1.1: Problemas de Ana y Marcos
+# AUTOR: David Lanz
+# FECHA DE CREACIÓN: Junio 2026
+# DESCRIPCIÓN: Programa para calcular el número de días que deben pasar para que
+# Ana y Marcos se vuelvan a encontrar para tomar café, dado que Ana descansa cada
+# 2 días y Marcos cada 3 días.
+# =============================================================================
+
+# Definimos los días de descanso de cada uno
+diaslibres_ana = 2
+diaslibres_marcos = 3
+
+# Empezamos a contar desde el día 1
+dia_encuentro = 1
+
+# El ciclo continuará ejecutándose MIENTRAS el día actual 
+# no sea divisible exactamente entre los días de ambos.
+while (dia_encuentro % diaslibres_ana != 0) or (dia_encuentro % diaslibres_marcos != 0):
+    # Si no coinciden, pasamos al siguiente día
+    dia_encuentro += 1
+
+# Cuando el ciclo termina, significa que encontramos el día correcto
+print(f"Deberán pasar {dia_encuentro} días para que Ana y Marcos se vuelvan a encontrar para tomar café.")
+
+# Fin del programa

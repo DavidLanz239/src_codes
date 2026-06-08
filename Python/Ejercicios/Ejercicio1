@@ -1,0 +1,5 @@
+#
+# Este es el primer ejercicio del diplomado de programación, realizado en Python
+#
+
+print("Hola, mundo en Python!")
