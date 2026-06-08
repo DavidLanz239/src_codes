@@ -7,7 +7,7 @@
 
 import os
 from time import time
-import Python.Proyectos.TorreDeHanoi.motordeljuego as motordeljuego
+import motordeljuego as motordeljuego
 
 class InterfazGraficaTerm:
     """Clase especializada en el renderizado estético de la matriz del juego."""

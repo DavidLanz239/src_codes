@@ -5,7 +5,7 @@
 # DESCRIPCIÓN: Controlador principal de reglas matemáticas y flujo interno.
 # =============================================================================
 
-import Python.Proyectos.TorreDeHanoi.elementosdeljuego as elementosdeljuego
+import elementosdeljuego as elementosdeljuego
 
 class motordeljuego:
     """Administra el estado actual de la partida, jugadas y restricciones."""
