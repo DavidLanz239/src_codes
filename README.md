@@ -2,4 +2,4 @@ En este contenedor se almacenan todos los códigos de programas elaborados en ca
 
 Los nombres de la carpetas incluidas en este contenedos, identifican el lenguaje de programación en el que se elaboró el código de programa
 
-El diplomado tuvo una duración de 4 meses, Duración del Diplomado: Mayo a Agosto 2026; y está avalado por la Universidad Central de Venezuela
+El diplomado tuvo una duración de 4 meses - Duración del Diplomado: Mayo a Agosto 2026; y está avalado por la Universidad Central de Venezuela
