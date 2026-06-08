@@ -1,0 +1,73 @@
+# =============================================================================
+# Ejercicio10: Crear una calculadora de operaciones aritméticas
+# AUTOR: David Lanz
+# FECHA DE CREACIÓN: Mayo 2026
+# DESCRIPCIÓN: Crear una calculadora de operaciones aritméticas, el usuario debe 
+# ingresar dos números y debe elegir cuál operación efectuar para que luego se 
+# muestra en la salida el resultado. 
+# =============================================================================
+#
+# 1 - Declaración de variables
+# Inicializamos las variables que vamos a usar en el programa
+numero1 = 0.0
+numero2 = 0.0
+operacion = ""
+resultado = 0.0
+opcion_menu = ""
+
+# 2 - Entrada de datos
+print("========================================")
+print("   BIENVENIDO A LA CALCULADORA PYTHON   ")
+print("========================================\n")
+
+# Solicitamos los dos números al usuario y los convertimos a decimales (float)
+numero1 = float(input("Por favor, ingresa el primer número: "))
+numero2 = float(input("Por favor, ingresa el segundo número: "))
+
+# Mostramos el menú de opciones aritméticas
+print("\n¿Qué operación deseas realizar?")
+print("+. Sumar (+)")
+print("-. Restar (-)")
+print("*. Multiplicar (*)")
+print("/. Dividir (/)")
+
+# Capturamos la decisión del usuario
+opcion_menu = input("\nSelecciona una opción (+, -, *, /): ")
+
+
+# 3 - Procesamiento de Datos (Operaciones Aritméticas)
+# Usamos estructuras condicionales (if-elif-else) para evaluar la opción elegida
+
+if opcion_menu == "+":
+    resultado = numero1 + numero2
+    operacion_nombre = "Suma"
+
+elif opcion_menu == "-":
+    resultado = numero1 - numero2
+    operacion_nombre = "Resta"
+
+elif opcion_menu == "*":
+    resultado = numero1 * numero2
+    operacion_nombre = "Multiplicación"
+
+elif opcion_menu == "/":
+    # Agregamos una validación importante: ¡No se puede dividir entre cero!
+    if numero2 != 0:
+        resultado = numero1 / numero2
+        operacion_nombre = "División"
+    else:
+        resultado = "Error (No se puede dividir entre cero)"
+        operacion_nombre = "División"
+
+else:
+    resultado = "Operación no válida"
+    operacion_nombre = "Desconocida"
+
+
+# 4 - SALIDA DE RESULTADOS
+print("\n========================================")
+print("              Resultado                ")
+print("========================================")
+print(f"Operación elegida: {operacion_nombre}")
+print(f"El resultado final es: {resultado}")
+print("========================================")

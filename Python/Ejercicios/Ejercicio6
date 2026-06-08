@@ -2,8 +2,8 @@
 # Ejercicio6: Imprime cadena de caracteres al revés
 # AUTOR: David Lanz
 # FECHA DE CREACIÓN: Mayo 2026
-# DESCRIPCIÓN: Realice un programa que le pida una cadena de caracteres (cualquier cosa)
-# al usuario y que después muestre lo que ingresó el usuario pero al revés.
+# DESCRIPCIÓN: Realice un programa que le pida una cadena de caracteres (cualquier
+# cosa) al usuario y que después muestre lo que ingresó el usuario pero al revés.
 # =============================================================================
 #
 # 1 - Declaración de variables

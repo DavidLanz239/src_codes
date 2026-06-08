@@ -1,0 +1,27 @@
+# =============================================================================
+# Ejercicio7: Imprime cadena de caracteres al revés
+# AUTOR: David Lanz
+# FECHA DE CREACIÓN: Mayo 2026
+# DESCRIPCIÓN: Realice un programa que le pida al usuario un número entero n,
+# luego pida n veces al usuario que ingrese texto (por ejemplo un nombre), 
+# luego de terminar de pedir esos datos, imprima los datos recogidos, en el 
+# orden inverso a como se ingresaron.
+# =============================================================================
+#
+# 1 - Declaración de variables
+# Inicializamos las variables que vamos a usar en el programa
+n = 0
+datos = []
+
+# 2 - Entrada de datos
+n = int(input("Ingrese un número entero n: "))
+for i in range(n):
+    dato = input(f"Ingrese el dato {i+1}: ")
+    datos.append(dato)
+
+# 3 - Procesamiento (Impresión en orden inverso)
+print("\n--- RESULTADOS ---")
+for i in range(len(datos)-1, -1, -1):
+    print(f"Dato {i+1}: {datos[i]}")
+    
+# 4 - Fin del programa

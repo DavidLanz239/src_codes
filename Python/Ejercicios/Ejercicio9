@@ -1,0 +1,24 @@
+# =============================================================================
+# Ejercicio9: Detecta si una cadena de caracteres es palindromo
+# AUTOR: David Lanz
+# FECHA DE CREACIÓN: Mayo 2026
+# DESCRIPCIÓN: Hacer un programa que reciba una string (cadena de caracteres) 
+# y detecte si es palindromo. (que se pueda leer igual de izquierda a derecha y viceversa).
+# =============================================================================
+#
+# 1 - Declaración de variables
+# Inicializamos las variables que vamos a usar en el programa
+cadena = ""
+cadena_reversa = ""
+
+# 2 - Entrada de datos
+cadena = input("Ingrese una cadena de caracteres: ")
+cadena_reversa = cadena[::-1]
+
+# 3 - Procesamiento y salida de resultados
+if cadena == cadena_reversa:
+    print(f"La cadena '{cadena}' es un palíndromo.")
+else:
+    print(f"La cadena '{cadena}' no es un palíndromo.")
+    
+# 4 - Fin del programa
