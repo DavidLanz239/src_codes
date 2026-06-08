@@ -1,0 +1,30 @@
+# ====================================================================================
+# Ejercicio11: Crear lista de palabras con más de cinco (5) letras
+# AUTOR: David Lanz
+# FECHA DE CREACIÓN: Mayo 2026
+# DESCRIPCIÓN: Dada una lista de 5 palabras dadas por el usuario, crea otra lista que 
+# contenga sólo aquellas palabras que tienen más de 5 letras. Imprime la nueva lista.
+# ====================================================================================
+#
+
+# 1 - Declaración de variables
+# Inicializamos las variables que vamos a usar en el programa
+palabras = []              # Lista para almacenar las 5 palabras ingresadas por el usuario
+palabras_filtradas = []    # Lista para almacenar las palabras con más de 5 letras
+
+# 2 - Entrada de datos
+print("Ingrese 5 palabras:")
+for i in range(5):
+    palabra = input(f"Palabra {i + 1}: ")
+    palabras.append(palabra)
+
+# 3 - Proceso
+for palabra in palabras:
+    if len(palabra) > 5:
+        palabras_filtradas.append(palabra)
+
+# 4 - Salida de datos
+print("Palabras con más de 5 letras:")
+print(palabras_filtradas)
+
+# 5 - Fin del programa

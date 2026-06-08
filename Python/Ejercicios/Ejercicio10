@@ -64,10 +64,12 @@ else:
     operacion_nombre = "Desconocida"
 
 
-# 4 - SALIDA DE RESULTADOS
+# 4 - Salida de Resultados
 print("\n========================================")
 print("              Resultado                ")
 print("========================================")
 print(f"Operación elegida: {operacion_nombre}")
 print(f"El resultado final es: {resultado}")
 print("========================================")
+
+# 5 - Fin del programa

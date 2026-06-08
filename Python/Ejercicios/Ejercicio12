@@ -1,0 +1,52 @@
+# ====================================================================================
+# Ejercicio11: Convertir un número de sistema binario a sistema decimal
+# AUTOR: David Lanz
+# FECHA DE CREACIÓN: Mayo 2026
+# DESCRIPCIÓN: Realizar un programa en el cual el usuario ingresa una cadena de caracteres
+# (string) donde es seguro que dentro de ella habrá un número en sistema binario, si resulta
+# ser que el número es par, entonces el programa deberá imprimirlo en sistema decimal, 
+# en caso contrario se imprime el string ingresado sin el número binario.
+# El string que el usuario va a ingresar, podrá tener letras y cualquier
+# símbolo de puntuación, pero en cuanto a números sólo tendrá los 0s y los
+# 1s correspondiente al número binario.
+# ====================================================================================
+#
+import re # Importamos el módulo de expresiones regulares para facilitar la extracción del número binario de entra la cadena de texto intrucida por el usuario.
+
+# 1 - Declaración de variables
+# Inicializamos las variables que vamos a usar en el programa
+entrada_usuario = ""       # Cadena original ingresada por el usuario
+subcadena_binaria = ""     # Variable para almacenar el número binario encontrado
+numero_decimal = 0         # Variable para almacenar la conversión decimal
+resultado = ""             # Variable para el valor final que se mostrará en pantalla
+
+# 2 - Entrada de datos
+entrada_usuario = input("Ingrese un string que contenga cualquier tipo de caracteres, y al menos un número binario (0 o 1): ")
+
+# 3 - Proceso de extracción del número binarios
+# Utilizamos expresiones regulares para encontrar la primera secuencia de 0s y 1s.
+# El patrón r'[01]+' busca uno o más dígitos que sean 0 o 1.
+coincidencia = re.search(r'[01]+', entrada_usuario)
+
+if coincidencia:
+    subcadena_binaria = coincidencia.group()
+
+    #  3.1 -Proceso de conversión a decimal
+    # Convertimos el string binario a un entero base 2.
+    numero_decimal = int(subcadena_binaria, 2)
+
+    #  3.2 -Proceso de evaluación de paridad
+    # Si el número decimal es par (residuo 0 al dividir entre 2).
+    if numero_decimal % 2 == 0:
+        resultado = str(numero_decimal)
+    # Si el número es impar.
+    else:
+        # Reemplazamos la parte binaria por un espacio vacío en el string original.
+        resultado = entrada_usuario.replace(subcadena_binaria, "")
+else:
+    resultado = "No se encontró ningún número binario en la cadena."
+
+# 4 - Salida de resultados
+print("Resultado:", resultado)
+
+# 5 - Fin del programa

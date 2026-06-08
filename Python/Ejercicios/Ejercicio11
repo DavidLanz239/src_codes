@@ -1,0 +1,29 @@
+# =============================================================================
+# Ejercicio11: Convertir un número de sistema binario a sistema decimal
+# AUTOR: David Lanz
+# FECHA DE CREACIÓN: Mayo 2026
+# DESCRIPCIÓN: Realizar un programa en el cual el usuario luego de ingresar un número
+# en sistema binario, se le muestre el mismo en sistema decimal.
+# =============================================================================
+#
+# 1 - Declaración de variables
+# Inicializamos las variables que vamos a usar en el programa
+numero_binario = ""
+numero_decimal = 0
+
+# 2 - Entrada de datos
+print("=================================================")
+print("   Convertidor de Números Binarios a Decimales  ")
+print("=================================================\n")
+print("\n")
+numero_binario = input("Ingrese un número en sistema binario: ").strip()
+
+# 3 - Procesamiento y salida
+# Validar que la entrada contenga sólo 0 y 1
+if not numero_binario or any(ch not in '01' for ch in numero_binario):
+	print("Error: debe ingresar sólo dígitos binarios (0 o 1).")
+else:
+	numero_decimal = int(numero_binario, 2)
+	print(f"El número binario {numero_binario} en decimal es: {numero_decimal}")
+ 
+# 4 - Fin del programa
