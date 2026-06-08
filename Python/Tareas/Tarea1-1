@@ -7,6 +7,7 @@
 # 2 días y Marcos cada 3 días.
 # =============================================================================
 
+# 1. Inicialización de los coeficientes y variables
 # Definimos los días de descanso de cada uno
 diaslibres_ana = 2
 diaslibres_marcos = 3
