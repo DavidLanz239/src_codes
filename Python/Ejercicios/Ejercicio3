@@ -1,0 +1,17 @@
+# =============================================================================
+# Ejercicio3: Imprime string con a al principio y al final
+# AUTOR: David Lanz
+# FECHA DE CREACIÓN: Mayo 2026
+# DESCRIPCIÓN: Crear un programa que le pida al usuario cualquier palabra, secuencia de
+# números u oración para que luego el programa imprima lo mismo pero
+# con una “a” al principio y una “a” al final.
+# =============================================================================
+#
+#
+# Declaración de variables
+entrada = input("Ingrese una palabra, secuencia de números u oración: ")
+salida = "a" + entrada + "a"
+print(f"El resultado es: {salida}")
+
+
+# Fin del programa

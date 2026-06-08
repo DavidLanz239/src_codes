@@ -1,0 +1,18 @@
+# =============================================================================
+# Ejercicio4: Imprime promedio de cuatro (4) números reales
+# AUTOR: David Lanz
+# FECHA DE CREACIÓN: Mayo 2026
+# DESCRIPCIÓN: Crear un programa que le pida al usuario cuatro (4) números reales
+# y luego el programa debe imprimir el promedio de ellos.
+# =============================================================================
+#
+#
+# Declaración de variables
+numeros = []
+for i in range(4):
+    numero = float(input(f"Ingrese el número real {i+1}: "))
+    numeros.append(numero)
+promedio = sum(numeros) / len(numeros)
+print(f"El promedio de los números ingresados es: {promedio}")
+
+# Fin del programa

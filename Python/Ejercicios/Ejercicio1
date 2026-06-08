@@ -1,5 +1,11 @@
+# =============================================================================
+# Ejercicio1: Hola Mundo
+# AUTOR: David Lanz
+# FECHA DE CREACIÓN: Mayo 2026
+# DESCRIPCIÓN: Crear un programa que imprima: “Hola mundo!”.
+# =============================================================================
 #
-# Este es el primer ejercicio del diplomado de programación, realizado en Python
 #
+print("Hola, Mundo en Python!")
 
-print("Hola, mundo en Python!")
+# Fin del programa
