@@ -5,7 +5,7 @@
 # DESCRIPCIÓN: Crear un programa que imprima: “Hola mundo!”.
 # =============================================================================
 #
-#
+# 1 - Salida de resultados
 print("Hola, Mundo en Python!")
 
-# Fin del programa
+# 2 - Fin del programa

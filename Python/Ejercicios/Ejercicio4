@@ -7,12 +7,19 @@
 # =============================================================================
 #
 #
-# Declaración de variables
+# 1 - Declaración de variables
+# Inicializamos las variables que vamos a usar en el programa
+numero = 0
 numeros = []
+promedio = 0
+
+# 2 - Entrada de datos
 for i in range(4):
     numero = float(input(f"Ingrese el número real {i+1}: "))
     numeros.append(numero)
+ 
+# 3 - Procesamiento y salida de resultados   
 promedio = sum(numeros) / len(numeros)
 print(f"El promedio de los números ingresados es: {promedio}")
 
-# Fin del programa
+# 4 - Fin del programa

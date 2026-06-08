@@ -1,0 +1,44 @@
+# =============================================================================
+# Ejercicio6: Imprime cadena de caracteres al revés
+# AUTOR: David Lanz
+# FECHA DE CREACIÓN: Mayo 2026
+# DESCRIPCIÓN: Realice un programa que le pida una cadena de caracteres (cualquier cosa)
+# al usuario y que después muestre lo que ingresó el usuario pero al revés.
+# =============================================================================
+#
+# 1 - Declaración de variables
+# Inicializamos las variables que vamos a usar en el programa
+sucesion = ""
+cantidad_ceros = 0
+cantidad_unos = 0
+
+# 2 - Entrada de datos
+# Le pedimos al usuario que ingrese la secuencia
+sucesion = input("Por favor, ingresa una sucesión de 0s y 1s (ej. 101011): ")
+
+# 3 - Procesamiento (Conteo)
+# Recorremos cada uno de los caracteres que escribió el usuario
+# y contamos cuántos ceros y cuántos unos hay en la sucesión
+for caracter in sucesion:
+    if caracter == "0":
+        cantidad_ceros = cantidad_ceros + 1
+    elif caracter == "1":
+        cantidad_unos = cantidad_unos + 1
+            
+# Determinamos si los ceros son pares o impares
+if cantidad_ceros % 2 == 0:
+    print(f"Cantidad de 0s: {cantidad_ceros} -> Es PAR")
+else:
+    print(f"Cantidad de 0s: {cantidad_ceros} -> Es IMPAR")
+
+# Determinamos si los unos son pares o impares
+if cantidad_unos % 2 == 0:
+    print(f"Cantidad de 1s: {cantidad_unos} -> Es PAR")
+else:
+    print(f"Cantidad de 1s: {cantidad_unos} -> Es IMPAR")
+
+# 4 - Salida de Resultados (Par o Impar)
+print("\n--- RESULTADOS ---")
+
+# 5 - Fin del programa
+

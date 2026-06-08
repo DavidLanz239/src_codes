@@ -1,0 +1,21 @@
+# =============================================================================
+# Ejercicio6: Determina si la cantidad de 0s y 1s es par o impar
+# AUTOR: David Lanz
+# FECHA DE CREACIÓN: Mayo 2026
+# DESCRIPCIÓN: Crear un programa que reciba una sucesión de 0s y 1s y luego 
+# determine si la cantidad 0s y 1s es par o impar (número binario).
+# =============================================================================
+#
+# 1 - Declaración de variables
+# Inicializamos las variables que vamos a usar en el programa
+cadena = ""
+cadena_reversa = ""
+
+# 2 - Entrada de datos
+cadena = input("Ingrese una cadena de caracteres: ")
+cadena_reversa = cadena[::-1]
+
+# 3 - Procesamiento y salida de resultados 
+print(f"La cadena al revés es: {cadena_reversa}")
+
+# 4 - Fin del programa

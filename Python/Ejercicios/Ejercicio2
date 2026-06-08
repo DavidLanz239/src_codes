@@ -7,11 +7,18 @@
 # =============================================================================
 #
 #
-#Declaración de variables
+# 1 - Declaración de variables
+# Inicializamos las variables que vamos a usar en el programa
+numero = 0
+
+# 2 - Entrada de datos
+# Le pedimos al usuario que ingrese un número entero
 numero = int(input("Ingrese un número entero: "))
+
+# 3 - Procesamiento y salida de resultados
 if numero % 2 == 0:
     print(f"El número {numero} es par.")
 else:
     print(f"El número {numero} es impar.")
     
-# Fin del programa
+# 4 - Fin del programa
