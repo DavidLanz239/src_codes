@@ -20,6 +20,8 @@
         "*.dbclient-js": "javascript",
         "*.embeddedhtml": "html",
         ".env*": "dotenv",
-        "iostream": "cpp"
-    }
+        "iostream": "cpp",
+        "cstdio": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
