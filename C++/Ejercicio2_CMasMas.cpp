@@ -1,12 +1,11 @@
 #include <iostream> // input/output
-#include <limits>
 
 int main() {
   std::cout << "Ingrese un numero entero positivo: ";
   int numero;
   if (!(std::cin >> numero)) {
     std::cin.clear();
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    std::cin.ignore(32767, '\n');
     std::cerr << "Entrada invalida." << std::endl;
     return 1;
   }
