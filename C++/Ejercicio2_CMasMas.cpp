@@ -1,29 +1,29 @@
-// =============================================================================
-// Ejercicio2: Número Par o Impar
-// AUTOR: David Lanz
-// FECHA DE CREACIÓN: Junio 2026
-// DESCRIPCIÓN: Crear un programa que detecte si un número entero ingresado por el usuario es par o impar.
-// =============================================================================
-//
+/* =============================================================================
+ Ejercicio2: Número Par o Impar
+ AUTOR: David Lanz
+ FECHA DE CREACIÓN: Junio 2026
+ DESCRIPCIÓN: Crear un programa que detecte si un número entero ingresado por el usuario es par o impar.
+ ============================================================================ */
 
-#include <cstdio>
 #include <iostream>
+#include <limits>
 
 // 1 - Entrada de datos
 int main() {
-  std::printf("Ingrese un numero entero positivo: ");
+  std::cout << "Ingrese un numero entero positivo: ";
   int numero;
 
 // 2 - Validar la entrada del usuario
-  if (!(std::scanf("%d", &numero))) {
-    std::scanf("%*c"); // Limpiar el buffer
+  if (!(std::cin >> numero)) {
+    std::cin.clear();
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
     std::cerr << "Entrada invalida." << std::endl;
     return 1;
   }
 
   if (numero <= 0) {
-    std::printf("El numero debe ser positivo.\n");
+    std::cout << "El numero debe ser positivo.\n";
     return 1;
   }
 
