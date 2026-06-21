@@ -2,8 +2,7 @@
 #include <vector>
 #include <algorithm>
 #include <chrono>
-#include <cstdlib>
-#include <ctime>
+#include <random>
 
 using namespace std;
 
@@ -19,7 +18,7 @@ void bubbleSort(vector<int>& arr) {
     }
 }
 
-// Partición para Quicksort
+// Particion para Quicksort
 int particionar(vector<int>& arr, int bajo, int alto) {
     int pivote = arr[alto];
     int i = (bajo - 1);
