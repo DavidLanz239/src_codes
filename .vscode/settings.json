@@ -23,5 +23,6 @@
         "iostream": "cpp",
         "cstdio": "cpp"
     },
-    "C_Cpp.errorSquiggles": "disabled"
+    "C_Cpp.errorSquiggles": "disabled",
+    "kilo-code.new.language": "es"
 }
